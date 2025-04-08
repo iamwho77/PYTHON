@@ -1,4 +1,4 @@
-public class abc{
+ class abc{
 
     public static String check(int seq[]){
         int n = seq.length  ;
