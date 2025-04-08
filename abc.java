@@ -1,4 +1,6 @@
- class abc{
+import java.util.Scanner;
+
+class abc{
 
     public static String check(int seq[]){
         int n = seq.length  ;
@@ -16,7 +18,13 @@
         return "Jolly" ; 
     }
  public static void main(String[] args) {
-    int seq[] = {10, 9, 7, 6};
+    Scanner sc = new Scanner(System.in);
+    int n = sc.nextInt() ; 
+    int seq[] = new int [n]  ;
+    for (int i = 0 ; i<seq.length ; i++){
+        int num = sc.nextInt() ; 
+        seq[i] = num; 
+    }
     System.out.println(check(seq));
  }
 }
